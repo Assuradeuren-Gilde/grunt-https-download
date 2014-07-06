@@ -4,6 +4,9 @@ Allows to download files via HTTP and HTTPS from within grunt.
 
 Usage Examples
 --------------
+Note: To use the library you will have to either install it manually by using `npm link` or by using
+`npm install --save-dev grunt-http-download`.
+
 ```js
 download:		{
 	// Example including multiple files
