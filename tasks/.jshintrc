@@ -1,0 +1,24 @@
+{
+	// Warnings
+	"bitwise":		true,
+	"camelcase":		true,
+	"curly":		false,
+	"eqeqeq":		true,
+	"forin":		true,
+	"immed":		true,
+	"indent":		8,
+	"latedef":		true,
+	"newcap":		true,
+	"noarg":		true,
+	"noempty":		false,
+	"nonew":		true,
+	"plusplus":		false,
+	"quotmark":		"single",
+	"undef":		true,
+	"unused":		true,
+	"strict":		true,
+	"trailing":		true,
+
+	// Environments
+	"node":			true
+}
