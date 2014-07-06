@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 		download:	{
 			test:		{
 				src:		'https://raw.githubusercontent.com/LordAkkarin/grunt-http-download/master/test/test.txt',
-				dest:		'test/'
+				dest:		'test/test-actual.txt'
 			}
 		},
 
