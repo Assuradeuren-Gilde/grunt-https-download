@@ -26,8 +26,8 @@ exports.testDownload = function (test) {
 	test.expect (1);
 
 	// read files
-	var actual = grunt.file.read ('test-actual.txt');
-	var expected = grunt.file.read ('test.txt');
+	var actual = grunt.file.read ('test/test-actual.txt');
+	var expected = grunt.file.read ('test/test.txt');
 
 	// check
 	test.equal (expected, actual, 'should allow single file download');
