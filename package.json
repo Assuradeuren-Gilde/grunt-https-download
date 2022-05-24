@@ -6,17 +6,12 @@
   "author": "Johannes Donath <johannesd@evil-co.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/LordAkkarin/grunt-download.git"
+    "url": "git+ssh://git@github.com/assuradeuren-gilde/grunt-https-download.git"
   },
   "bugs": {
-    "url": "https://evilco.atlassian.com/browse/GDL"
+    "url": "https://github.com/assuradeuren-gilde/grunt-https-download/issues"
   },
-  "licenses": [
-    {
-      "type": "Apache License 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
-    }
-  ],
+  "licenses": "Apache-2.0",
   "keywords": [
     "gruntplugin"
   ],
@@ -42,9 +37,8 @@
   "scripts": {
     "test": "grunt test"
   },
-  "main": "Gruntfile.js",
+  "main": "gruntfile.js",
   "directories": {
     "test": "test"
-  },
-  "license": "ISC"
+  }
 }

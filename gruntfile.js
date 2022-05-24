@@ -56,7 +56,7 @@ module.exports = function (grunt) {
 			 * The grunt jshint task
 			 */
 			grunt:			{
-				src:			['Gruntfile.js'],
+				src:			['gruntfile.js'],
 
 				/**
 				 * Grunt specific settings
