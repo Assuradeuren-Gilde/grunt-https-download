@@ -1,6 +1,6 @@
 {
-  "name": "@assuradeurengilde/grunt-https-download",
-  "description": "Allows downloading files via HTTP(S) with grunt.",
+  "name": "@assuradeurengilde/grunt-https-file",
+  "description": "Allows downloading files via https with grunt.",
   "version": "0.1.0",
   "homepage": "https://github.com/assuradeuren-gilde/grunt-https-download",
   "author": "Johannes Donath <johannesd@evil-co.com>",
