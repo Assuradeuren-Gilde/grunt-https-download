@@ -31,10 +31,10 @@
 		"grunt-contrib-jshint":		"~0.6.2",
 		"grunt-contrib-nodeunit":	"~0.2.0",
 		"grunt-contrib-clean":		"~0.5.0",
-		"grunt":			"~0.4.0"
+		"grunt":			"~1.5.2"
 	},
 	"peerDependencies":	{
-		"grunt":			"~0.4.0"
+		"grunt":			"~1.5.2"
 	},
 	"dependencies":		{
 		"chalk":			"~0.4.0"
