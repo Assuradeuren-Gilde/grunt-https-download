@@ -27,10 +27,6 @@ module.exports = function (grunt) {
 	 * The download task.
 	 */
 	grunt.registerMultiTask ('download', 'Download files.', function () {
-		// get options
-		var options = this.options ({
-			// TODO
-		});
 
 		/**
 		 * Returns the correct HTTP engine.
@@ -85,7 +81,7 @@ module.exports = function (grunt) {
 
 
 				// set destination
-				var destination = filePair.dest + (destinationType == 'directory' ? file.split ('/').pop () : '');
+				var destination = filePair.dest + (destinationType === 'directory' ? file.split ('/').pop () : '');
 
 				// log
 				grunt.log.writeln ('Downloading ' + chalk.cyan (file) + ' to ' + chalk.cyan (destination) + ' ...');

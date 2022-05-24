@@ -31,7 +31,7 @@ module.exports = function (grunt) {
 		 */
 		download:	{
 			test:		{
-				src:		'https://raw.githubusercontent.com/LordAkkarin/grunt-http-download/master/test/test.txt',
+				src:		'https://raw.githubusercontent.com/assuradeuren-gilde/grunt-https-download/master/test/test.txt',
 				dest:		'test/test-actual.txt'
 			}
 		},
