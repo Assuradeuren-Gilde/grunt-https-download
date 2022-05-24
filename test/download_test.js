@@ -13,25 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-var grunt = require ('grunt');
+var grunt = require('grunt');
 
 /**
  * Tests a simple download from GitHub.
  * @param test The test callback.
  */
 exports.testDownload = function (test) {
-	'use strict';
+    'use strict';
 
-	// expect a single test
-	test.expect (1);
+    // expect a single test
+    test.expect(1);
 
-	// read files
-	var actual = grunt.file.read ('test/test-actual.txt');
-	var expected = grunt.file.read ('test/test.txt');
+    // read files
+    var actual = grunt.file.read('test/test-actual.txt');
+    var expected = grunt.file.read('test/test.txt');
 
-	// check
-	test.equal (expected, actual, 'should allow single file download');
+    // check
+    test.equal(expected, actual, 'should allow single file download');
 
-	// finish test
-	test.done ();
+    // finish test
+    test.done();
 };

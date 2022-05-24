@@ -14,83 +14,83 @@
  * limitations under the License.
  */
 module.exports = function (grunt) {
-	'use strict';
+    'use strict';
 
-	// initialize configuration
-	grunt.initConfig ({
+    // initialize configuration
+    grunt.initConfig({
 
-		/**
-		 * Cleans up the project workspace.
-		 */
-		clean:		{
-			test:		['test/test-actual.txt']
-		},
+        /**
+         * Cleans up the project workspace.
+         */
+        clean: {
+            test: ['test/test-actual.txt']
+        },
 
-		/**
-		 * Downloads a test file.
-		 */
-		download:	{
-			test:		{
-				src:		'https://raw.githubusercontent.com/assuradeuren-gilde/grunt-https-download/master/test/test.txt',
-				dest:		'test/test-actual.txt'
-			}
-		},
+        /**
+         * Downloads a test file.
+         */
+        download: {
+            test: {
+                src: 'https://raw.githubusercontent.com/assuradeuren-gilde/grunt-https-download/master/test/test.txt',
+                dest: 'test/test-actual.txt'
+            }
+        },
 
-		/**
-		 * JSHint
-		 */
-		jshint:			{
+        /**
+         * JSHint
+         */
+        jshint: {
 
-			/**
-			 * JSHint options
-			 */
-			options:		{
+            /**
+             * JSHint options
+             */
+            options: {
 
-				/**
-				 * Enables .jshintrc
-				 */
-				jshintrc:		'tasks/.jshintrc'
-			},
+                /**
+                 * Enables .jshintrc
+                 */
+                jshintrc: 'tasks/.jshintrc'
+            },
 
-			/**
-			 * The grunt jshint task
-			 */
-			grunt:			{
-				src:			['gruntfile.js'],
+            /**
+             * The grunt jshint task
+             */
+            grunt: {
+                src: ['gruntfile.js'],
 
-				/**
-				 * Grunt specific settings
-				 */
-				options:		{
-					jshintrc:		'.jshintrc'
-				}
-			},
+                /**
+                 * Grunt specific settings
+                 */
+                options: {
+                    jshintrc: '.jshintrc'
+                }
+            },
 
-			/**
-			 * The script jshint task
-			 */
-			src:			{
-				src:			['src/*.js']
-			}
-		},
+            /**
+             * The script jshint task
+             */
+            src: {
+                src: ['src/*.js']
+            }
+        },
 
-		/**
-		 * Tests the library.
-		 */
-		nodeunit:	{
-			tests:		['test/*_test.js']
-		}
-	});
+        /**
+         * Tests the library.
+         */
+        nodeunit: {
+            tests: ['test/*_test.js']
+        }
+    });
 
-	// load the task itself
-	grunt.loadTasks ('tasks');
+    // load the task itself
+    grunt.loadTasks('tasks');
 
-	// load dependency tasks
-	grunt.loadNpmTasks ('grunt-contrib-jshint');
-	grunt.loadNpmTasks ('grunt-contrib-nodeunit');
-	grunt.loadNpmTasks ('grunt-contrib-clean');
+    // load dependency tasks
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-	// register task groups
-	grunt.registerTask ('test', ['clean', 'download', 'nodeunit']);
-	grunt.registerTask ('default', ['jshint', 'test']);
+    // register task groups
+    grunt.registerTask('test', ['clean', 'download', 'nodeunit']);
+    grunt.registerTask('default', ['jshint', 'test']);
 };
