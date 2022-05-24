@@ -17,7 +17,6 @@ module.exports = function (grunt) {
     'use strict';
 
     // dependencies
-    var chalk = require('chalk');
     var fs = require('fs');
     var http = require('http');
     var https = require('https');
@@ -84,7 +83,7 @@ module.exports = function (grunt) {
                 var destination = filePair.dest + (destinationType === 'directory' ? file.split('/').pop() : '');
 
                 // log
-                grunt.log.writeln('Downloading ' + chalk.cyan(file) + ' to ' + chalk.cyan(destination) + ' ...');
+                grunt.log.writeln('Downloading ' + file + ' to ' + destination + ' ...');
 
                 // open file
                 var fileStream = fs.createWriteStream(destination);
@@ -103,7 +102,7 @@ module.exports = function (grunt) {
                     // listen for end
                     response.on('end', function () {
                         // log
-                        grunt.log.writeln('Finished downloading ' + chalk.cyan(file) + '.');
+                        grunt.log.writeln('Finished downloading ' + file + '.');
 
                         // reduce amount of files
                         fileCount--;
