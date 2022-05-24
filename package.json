@@ -1,46 +1,50 @@
 {
-	"name":				"grunt-http-download",
-	"description":			"Allows downloading files via HTTP(S) with grunt.",
-	"version":			"0.1.0",
-
-	"homepage":			"https://github.com/LordAkkarin/grunt-http-download",
-	"author":		{
-		"name":				"Johannes Donath",
-		"email":			"johannesd@evil-co.com"
-	},
-	"repository":		{
-		"type":				"git",
-		"url":				"git://github.com/LordAkkarin/grunt-download.git"
-	},
-	"bugs":			{
-		"url":				"https://evilco.atlassian.com/browse/GDL"
-	},
-	"licenses":		[
-		{
-			"type":				"Apache License 2.0",
-			"url":				"http://www.apache.org/licenses/LICENSE-2.0.txt"
-		}
-	],
-	"keywords":		["gruntplugin"],
-	"files":		["tasks", "LICENSE"],
-
-	"engines":		{
-		"node":				">= 0.8.0"
-	},
-	"devDependencies":	{
-		"grunt-contrib-jshint": "^3.2.0",
-		"grunt-contrib-nodeunit": "^4.0.0",
-		"grunt-contrib-clean": "^2.0.1",
-		"grunt":			"~1.5.2"
-	},
-	"peerDependencies":	{
-		"grunt":			"~1.5.2"
-	},
-	"dependencies":		{
-		"chalk":			"~0.4.0"
-	},
-
-	"scripts":		{
-		"test":				"grunt test"
-	}
+  "name": "@assuradeurengilde/grunt-https-download",
+  "description": "Allows downloading files via HTTP(S) with grunt.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/assuradeuren-gilde/grunt-https-download",
+  "author": "Johannes Donath <johannesd@evil-co.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LordAkkarin/grunt-download.git"
+  },
+  "bugs": {
+    "url": "https://evilco.atlassian.com/browse/GDL"
+  },
+  "licenses": [
+    {
+      "type": "Apache License 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    }
+  ],
+  "keywords": [
+    "gruntplugin"
+  ],
+  "files": [
+    "tasks",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-nodeunit": "^4.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt": "~1.5.2"
+  },
+  "peerDependencies": {
+    "grunt": "~1.5.2"
+  },
+  "dependencies": {
+    "chalk": "~0.4.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
 }
